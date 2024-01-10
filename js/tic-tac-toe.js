@@ -81,7 +81,7 @@ const tic_tac_toe = {
   game_is_over() {
     this.gameover = true;
     this.tie_length();
-    if (this.symbols.size == 9 || this.symbols.turn_index != 0) {
+    if (this.symbols.size == 9 && this.symbols.turn_index != 0) {
       console.log("draw");
       alert("draw");
     } else if (this.symbols.turn_index) {
